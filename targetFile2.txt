@@ -1,0 +1,1 @@
+This is targeted file two to be encrypted
