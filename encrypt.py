@@ -4,7 +4,7 @@ import os
 files = []
 thisFile = os.path.basename(__file__)
 keyFile = "key.key"
-safes = [thisFile, keyFile, "decrypt.py", "node_modules", ".next", ".git"]
+safes = [thisFile, keyFile, "decrypt.py", "node_modules", ".next", ".git", "README.md"]
 
 def addFiles(path):
     for file in os.listdir(path):

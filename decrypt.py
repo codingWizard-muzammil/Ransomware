@@ -4,7 +4,7 @@ import os
 files = []
 thisFile = os.path.basename(__file__)
 keyFile = "key.key"
-safes = [thisFile, keyFile, "encrypt.py", "node_modules", ".next", ".git"]
+safes = [thisFile, keyFile, "encrypt.py", "node_modules", ".next", ".git", "README.md"]
 
 def addFiles(path):
     for file in os.listdir(path):
@@ -23,7 +23,7 @@ print(files)
 
 
 with open(keyFile, "rb") as k:
-    key = (k.read())
+    key = k.read()
 
 fer = Fernet(key)
 
